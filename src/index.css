@@ -1,13 +1,55 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@import url('https://fonts.googleapis.com/css2?family=Sora:wght@300&display=swap');
+@keyframes example {
+    from {background-color:#2f6daf;}
+    to {background-color:#f47853;}
+  }
+body{
+    background: #7bccc0;
+    font-family: "Sora", sans-serif;
+    font-size: 20px;
+    color:white;
+    width: 100%;
+    text-align: center;
 }
-
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.button{
+    background: #2f6daf;
+    color:white;
+}
+.appTitle{
+    font-size: 60px;
+}
+input{
+    font-size: 20px;
+    color:white;
+    background: none;
+    border:none;
+    border-bottom: white solid;
+}
+input:focus {
+    outline: none;
+}
+::placeholder {
+    color:white;
+}
+button {
+    background-color:#2f6daf;
+    border-radius: 50%;
+    color:white;
+    border: solid white;
+    font-size: 16px;
+    margin-left: 4px;
+}
+button:hover {
+    animation-name: example;
+    animation-fill-mode: forwards;
+    animation-duration: 1s;
+}
+li{
+    background-color: #f47853;
+    text-decoration: none;
+    border-radius: 10px;
+    padding: .25em;
+    display: table;
+    margin-bottom: .5em;
+    margin:.5em auto .5em auto;
 }
